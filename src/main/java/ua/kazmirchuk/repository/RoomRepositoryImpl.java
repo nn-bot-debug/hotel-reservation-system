@@ -1,15 +1,13 @@
 package ua.kazmirchuk.repository;
 
 import ua.kazmirchuk.model.Room;
-import ua.kazmirchuk.model.RoomType;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 public class RoomRepositoryImpl implements RoomRepository{
 
-    private List<Room> rooms = new ArrayList<>();
+    private final List<Room> rooms = new ArrayList<>();
     private Long currentId = 1L;
 
     @Override
